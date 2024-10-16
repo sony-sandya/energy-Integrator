@@ -25,6 +25,12 @@ body {
     text-decoration: underline;
 }
 
+.navbar-nav li a.active {
+    border-bottom: 3px solid black;
+    font-weight: 700;
+}
+
+
 div#topheader {
     background: white;
     box-shadow: 0 4px 12px 0px #00000029;
@@ -288,6 +294,7 @@ div#topheader {
     background-color: #00000059;
     background-blend-mode: overlay
 }
+
 .parallex-section-ourService:before {
     content: "";
     position: absolute;
@@ -308,7 +315,7 @@ div#topheader {
     position: relative;
     display: flex;
     align-items: center;
-  }
+}
 
 .our-servicesCard {
     background: white;
@@ -332,6 +339,7 @@ div#topheader {
 .our-servicesCard div {
     padding: 58px;
 }
+
 /* Our plants */
 #our-plantsBanner:before {
     background-image: url(./assets/img/our-services/our-services-banner.png);
@@ -343,9 +351,63 @@ div#topheader {
     background-color: #00000059;
     background-blend-mode: overlay
 }
-.parallex-section-ourService, .parallex-section-ourService:before {
+
+.parallex-section-ourService,
+.parallex-section-ourService:before {
     background: 50% 50% / cover;
 }
+
+.our-plants-ImgSpace {
+    margin-bottom: 12px;
+}
+
+
+.contact-us-Section {
+    background: linear-gradient(to right, #F4F4F4 0%, #F4F4F4 50%, #ffffff 50%, #ffffff 100%);
+    height: 100%;
+    width: 100%;
+    padding: 30px 20px;
+}
+
+.our-plants-Border {
+    height: 8px !important;
+    color: #06B64D;
+    opacity: 1;
+    margin-top: 38px !important;
+}
+
+.common-PlantsSpacePadding {
+    padding: 21px 0px;
+}
+
+.footer-ul {
+    list-style: none;
+    text-decoration: none !important;
+    padding-left: 0px;
+}
+
+.footer-ul li {
+    margin-top: 10px;
+}
+
+.footer-ul li a {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+.footer-container {
+    padding: 60px 0px 30px;
+}
+
+.copy-Right {
+    padding: 20px 0px;
+}
+
+.footer-LogoImage {
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width: 767px) {
     .version {
         transform: scale(0.6) rotate(45deg);
@@ -365,4 +427,65 @@ div#topheader {
         font-weight: 700;
         padding: 18px 80px;
     }
+
+    .banner-heading {
+        font-size: 40px;
+    }
+
+    .who-are-you-responsive {
+        flex-direction: column-reverse;
+    }
+
+    .vission-MissionSec {
+        background: linear-gradient(to bottom, #06B64D 0%, #06B64D 50%, #F5F3F3 50%, #F5F3F3 100%);
+        padding: 0px !important;
+    }
+
+    .vission-res {
+        padding: 22px;
+        margin-bottom: 0px !important;
+    }
+
+    .wt-weAchieve {
+        font-size: 32px;
+    }
+
+    .our-Strength {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    .our-strength-card {
+        margin-bottom: 14px;
+    }
+
+    .strength-background {
+        width: 75%;
+    }
+
+    #our-plantsBanner:before {
+        background-image: url(./assets/img/our-services/our-services-banner.png);
+        background-attachment: fixed;
+        z-index: -3;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-color: #00000059;
+        background-blend-mode: overlay;
+    }
+
+    .footer-LogoImage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-QuickLinks {
+        margin-top: 20px;
+        padding: 20px 0px 0px 40px;
+    }
+
+    /* .vission-MissionSec p:first-child {
+        margin-bottom: 56px !important;
+    } */
 }
