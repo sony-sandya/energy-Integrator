@@ -11,6 +11,7 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     transform-style: preserve-3d;
+    line-height: 1.2;
 }
 
 .navbar-nav a {
@@ -146,7 +147,7 @@ div#topheader {
 
 .wt-weAchieveSubHeading {
     color: #06B64D;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 14px;
 }
@@ -408,12 +409,26 @@ div#topheader {
     align-items: center;
 }
 
+@media (max-width: 991px) {
+    .vission-MissionSec {
+        background: linear-gradient(to bottom, #06B64D 0%, #06B64D 50%, #F5F3F3 50%, #F5F3F3 100%);
+        padding: 0px !important;
+    }
+
+    .vission-res {
+        padding: 22px;
+        margin-bottom: 0px !important;
+    }
+}
+
 @media (max-width: 767px) {
     .version {
         transform: scale(0.6) rotate(45deg);
         right: -100px;
     }
 }
+
+
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     #section-5:before {
